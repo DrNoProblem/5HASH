@@ -3,32 +3,34 @@ provider "aws" {
 }
 
 
-# Création du sg
-module "ec2" {
-  source = "./module/ec2"
-}
-
-# Création du sg
 module "cloud-watch" {
   source = "./module/cloud-watch"
 }
 
-# Création du sg
+module "ec2" {
+  source = "./module/ec2"
+}
+
 module "elb" {
   source = "./module/elb"
 }
 
-# Création du sg
 module "rds" {
   source = "./module/rds"
 }
 
-# Création du sg
 module "secret-manager" {
   source = "./module/secret-manager"
 }
 
-# Création du sg
+module "security-group" {
+  source = "./module/security-group"
+}
+
+module "ssh" {
+  source = "./module/ssh"
+}
+
 module "vpc" {
   source = "./module/vpc"
 }
