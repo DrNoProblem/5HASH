@@ -16,7 +16,6 @@ resource "aws_cloudwatch_metric_alarm" "example_alarm" {
   alarm_description = "Alarme déclenchée si la CPU est supérieure à 70% pendant 2 périodes de 5 minutes."
 }
 
-
 /*  
 
 Ce fichier utilise la ressource Terraform aws_cloudwatch_metric_alarm pour créer une alarme CloudWatch dans AWS. Assurez-vous de remplacer "votre_region_aws" par la région AWS 
